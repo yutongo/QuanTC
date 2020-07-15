@@ -1,6 +1,8 @@
 # QuanTC: 
 an unsupervised learning of single-cell transcriptomic data allows identification of individual cells making transition between all cell states, and inference of genes that mark transitions.
-![](file:///Users/yutong/Dropbox/ics/Paper/MainFigs/method/method.png)
+![](https://github.com/yutongo/QuanTC/blob/master/image/method.png)
+
+
 # Usage
 Download the source codes and unzip the MATLAB package. Change the current directory in MATLAB to the folder containing the scripts.
 
