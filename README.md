@@ -1,6 +1,6 @@
 # QuanTC: 
 an unsupervised learning of single-cell transcriptomic data allows identification of individual cells making transition between all cell states, and inference of genes that mark transitions.
-
+![method](https://github.com/yutongo/QuanTC/blob/master/image/method_adv.pdf)
 
 
 # Usage
