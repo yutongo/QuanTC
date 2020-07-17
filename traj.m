@@ -55,8 +55,14 @@ a(a == 0 ) = NaN;
 % involved 
 path = pathbetweennodes(number_transiton_p, start_cluster, end_cluster);
 ordered_cell = {};
-for i = 1:size(path,1)
-    ordered_cell{i} = ordercell_alongl(H./sum(H,2),H_t1,H_t2,I_top2,cpi,path{i},0.96);
+if No_cluster == 4;
+    for i = 1:size(path,1)
+        ordered_cell{i} = ordercell_alongl(H./sum(H,2),H_t1,H_t2,I_top2,cpi,path{i},0.96);
+    end
+else
+    for i = 1:size(path,1)
+        ordered_cell{i} = ordercell_alongl(H./sum(H,2),H_t1,H_t2,I_top2,cpi,path{i},0.99955);
+    end
 end
 
 for i = 1:size(path,1)
