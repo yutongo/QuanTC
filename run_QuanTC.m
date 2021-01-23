@@ -19,8 +19,9 @@ cluster_relation = H_normailed'*H_normailed;
 cr = cluster_relation;
 
 if size(H,2)>3
-    cr(cr==min(min(cr(cr~=0))))=0;
+    %cr(cr==min(min(cr(cr~=0))))=0;
     cr(cr==min(min(cr)))=0;%ignore smallest value
+    cr(cr==min(min(cr(cr~=0))))=0;
 end
 
 
